@@ -35,8 +35,38 @@ namespace burgershack2.Services
 \__ \ ||  __/ (_| |   < 
 |___/\__\___|\__,_|_|\_\", "Track marks dirt");
 
-      Menu.AddRange(new MenuItem[] { burger, salad, steak });
+
+      Drinks milkshake = new Drinks("Chocolate Milkshake", 7.77, "Very Chocolatey Shake", $@"
+     _           _        
+    | |         | |       
+ ___| |__   __ _| | _____ 
+/ __| '_ \ / _` | |/ / _ \
+\__ \ | | | (_| |   <  __/
+|___/_| |_|\__,_|_|\_\___|", 24);
+
+      Drinks lemonade = new Drinks("Lemony Lemonade", 4.50, "Freshly squeezed lemons, just dont put it in your eyes", $@"
+ _                                      _      
+| |                                    | |     
+| | ___ _ __ ___   ___  _ __   __ _  __| | ___ 
+| |/ _ \ '_ ` _ \ / _ \| '_ \ / _` |/ _` |/ _ \
+| |  __/ | | | | | (_) | | | | (_| | (_| |  __/
+|_|\___|_| |_| |_|\___/|_| |_|\__,_|\__,_|\___|
+                                               ", 16);
+
+      Drinks water = new Drinks("Water", 10, "Just a glass of water", $@"
+               _            
+              | |           
+__      ____ _| |_ ___ _ __ 
+\ \ /\ / / _` | __/ _ \ '__|
+ \ V  V / (_| | ||  __/ |   
+  \_/\_/ \__,_|\__\___|_|   
+                            ", 12);
+
+      Menu.AddRange(new MenuItem[] { burger, salad, steak, milkshake, lemonade, water });
     }
+
+
+
 
     public void getItems(int index)
     {

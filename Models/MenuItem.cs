@@ -6,6 +6,7 @@ namespace burgershack2.Models
     public double Price { get; set; }
     public string Description { get; set; }
 
+
     public virtual string GetTemplate()
     {
       string template = $@"
