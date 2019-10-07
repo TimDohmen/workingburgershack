@@ -41,12 +41,11 @@ namespace burgershack2.Services
     public void getItems(int index)
     {
       Messages.Add("Available Items");
-      for (int i = 0; i < Menu.Count; i++)
-      {
-        MenuItem m = Menu[index];
-        Messages.Add(m.GetTemplate());
 
-      }
+      MenuItem m = Menu[index];
+      Messages.Add(m.GetTemplate());
+
+
     }
 
     public void getItems()

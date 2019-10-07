@@ -17,7 +17,21 @@ namespace burgershack2.Controllers
       switch (choice)
       {
 
-        // _menuService.getItems(choice);
+        case "q":
+          Environment.Exit(1);
+          break;
+        default:
+          if (int.TryParse(choice, out int index))
+          {
+
+            _menuService.getItems(index - 1);
+            Print();
+          }
+          else
+          {
+            System.Console.WriteLine("Invalid Key");
+          }
+          break;
       }
 
     }
@@ -29,7 +43,6 @@ namespace burgershack2.Controllers
         System.Console.WriteLine(message);
       }
       _menuService.Messages.Clear();
-      System.Console.WriteLine();
 
     }
   }
