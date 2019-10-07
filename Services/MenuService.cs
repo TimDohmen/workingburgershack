@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using burgersack.Models;
+using burgershack2.Models;
 
 namespace burgershack2.Services
 {

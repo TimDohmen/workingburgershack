@@ -1,5 +1,5 @@
 using System;
-namespace burgershack2.Services;
+using burgershack2.Services;
 
 namespace burgershack2.Controllers
 {

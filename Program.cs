@@ -1,12 +1,17 @@
 ﻿using System;
+using burgershack2.Controllers;
 
 namespace burgershack2
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      MenuController mc = new MenuController();
+      while (true)
+      {
+        mc.UserInput();
+      }
     }
+  }
 }
