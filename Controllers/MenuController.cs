@@ -14,6 +14,12 @@ namespace burgershack2.Controllers
       string choice = Console.ReadLine().ToLower();
       Console.Clear();
 
+      switch (choice)
+      {
+
+        // _menuService.getItems(choice);
+      }
+
     }
 
     private void Print()

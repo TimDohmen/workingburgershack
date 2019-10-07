@@ -10,9 +10,30 @@ namespace burgershack2.Services
 
     public void Setup()
     {
-      Entree burger = new Entree("Big Boy Burger", 10.99, "The biggest burger for the biggest boy");
-      Entree salad = new Entree("Western Salad", 3.99, "It can be cheap because nobody will buy it anyways.");
-      Entree steak = new Entree("Lightly Grill Steak", 24.99, "Evolve Arms");
+      Entree burger = new Entree("Big Boy Burger", 10.99, "The biggest burger for the biggest boy", $@"
+ _                               
+| |                              
+| |__  _   _ _ __ __ _  ___ _ __ 
+| '_ \| | | | '__/ _` |/ _ \ '__|
+| |_) | |_| | | | (_| |  __/ |   
+|_.__/ \__,_|_|  \__, |\___|_|   
+                  __/ |          
+                 |___/  ", "Bacon, Onion Rings, Ham, More Bacon");
+      Entree salad = new Entree("Western Salad", 3.99, "It can be cheap because nobody will buy it anyways.", $@"
+           _           _     
+          | |         | |    
+ ___  __ _| | __ _  __| |___ 
+/ __|/ _` | |/ _` |/ _` / __|
+\__ \ (_| | | (_| | (_| \__ \
+|___/\__,_|_|\__,_|\__,_|___/
+                             ", "Bacon, More Bacon, Steak bits");
+      Entree steak = new Entree("Lightly Grill Steak", 24.99, "Evolve Arms", $@"
+     _             _    
+    | |           | |   
+ ___| |_ ___  __ _| | __
+/ __| __/ _ \/ _` | |/ /
+\__ \ ||  __/ (_| |   < 
+|___/\__\___|\__,_|_|\_\", "Track marks dirt");
 
       Menu.AddRange(new MenuItem[] { burger, salad, steak });
     }
