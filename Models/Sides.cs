@@ -1,4 +1,4 @@
-namespace burgersack.Models
+namespace burgershack2.Models
 {
   public class Sides : MenuItem
   {
